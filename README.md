@@ -34,41 +34,41 @@ The solution is built using Microsoft Fabric Lakehouse, Dataflow Gen2, Semantic 
 Architecture & Workflow
 1.  Data Storage — Microsoft Fabric Lakehouse
 
-Source Excel/CSV files uploaded into a Fabric Lakehouse.
+    Source Excel/CSV files uploaded into a Fabric Lakehouse.
 
-Table stored as “managed Delta tables” for reliability & performance.
+    Table stored as “managed Delta tables” for reliability & performance.
 
 2️. Data Transformation — Dataflow Gen2
 
-The dataflow performs:
+   The dataflow performs:
 
-Column renaming
+   Column renaming
+ 
+   Data typing
 
-Data typing
+   Removing blanks
 
-Removing blanks
+   Filtering years
 
-Filtering years
+   Creating measures for enrollment calculations
 
-Creating measures for enrollment calculations
-
-Transforming tables for Power BI
+   Transforming tables for Power BI
 
 3. Data Modeling — Semantic Model
 
-Relationship modeling
+   Relationship modeling
 
-Creating DAX measures
+   Creating DAX measures
 
-Creating Hierarchy, formatting and Descriptions
+   Creating Hierarchy, formatting and Descriptions
 
-Designing report pages (Visualisation) - Power BI 
+   Designing report pages (Visualisation) - Power BI 
 
 Two fully designed report pages:
 
-Executive Summary Dashboard
+  Executive Summary 
 
-Comparative Insights
+  Comparative Insights
 
 
 Report Pages
@@ -108,8 +108,6 @@ Enrollment type trends
 
 Insights 
 
-
-
 Key DAX Measures
 Total Enrollment
 Total Enrollment = SUM(Enrollment[TotalEnrollment])
@@ -145,7 +143,7 @@ RETURN
 CALCULATE(SELECTEDVALUE(Enrollment[SchoolName]), [YoY %] = BottomVal)
 
  
-📁 Files Included
+Files Included
 
 Power BI Report (.pbix)
 
@@ -156,6 +154,7 @@ Measures screenshot
 Dataflow Screenshot
 
 Semantic Model Screenshot
+
 
 Key Skills Demonstrated
 
@@ -179,15 +178,6 @@ Automate data refresh via Fabric pipelines
 
 Integrate with Azure Synapse 
 
-Author
-
-Obianuju Lynda Nzurumike
-Data Analyst | Data Engineer
-Calgary, Alberta
-nzurumikeuju@yahoo.com
-LinkedIn: https://www.linkedin.com/in/obianuju-nzurumike/
-
-
 
 Data Source & Usage License
 
@@ -203,3 +193,12 @@ License: Open Government License – Canada (OGL-Canada)
 Usage: The dataset is free to use, modify, and publish with attribution.
 
 This project uses open data made available under the Open Government License – Canada.
+
+Author
+
+Obianuju Lynda Nzurumike
+Data Analyst | Data Engineer
+Calgary, Alberta
+nzurumikeuju@yahoo.com
+LinkedIn: https://www.linkedin.com/in/obianuju-nzurumike/
+
