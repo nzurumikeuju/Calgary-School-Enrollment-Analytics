@@ -144,26 +144,14 @@ VAR BottomVal = MINX(ALL(Enrollment), [YoY %])
 RETURN
 CALCULATE(SELECTEDVALUE(Enrollment[SchoolName]), [YoY %] = BottomVal)
 
- Repository Structure
-Calgary-School-Enrollment-Analytics
-│── Calgary_School_Enrollment.pbix
-│── README.md
-│── /ReportScreenshots/
-│      ├── ExecutiveSummary.png
-│      ├── ComparativeInsights.png
-│      
-│── /Data/ 
-│── /Documentation/
-        ├── Dataflow_Transformations.pdf
-        └── Model_Design.pdf
-
+ 
 📁 Files Included
 
 Power BI Report (.pbix)
 
 Dashboard screenshots
 
-DAX formulas
+Measures screenshot
 
 Dataflow Screenshot
 
@@ -199,3 +187,19 @@ Calgary, Alberta
 nzurumikeuju@yahoo.com
 LinkedIn: https://www.linkedin.com/in/obianuju-nzurumike/
 
+
+
+Data Source & Usage License
+
+The dataset used in this project comes from publicly available sources.
+All rights and original data ownership belong to the data providers listed below.
+
+Source: Calgary School Enrollment Data
+
+Provider: Calgary Board of Education / City of Calgary Open Data
+
+License: Open Government License – Canada (OGL-Canada)
+
+Usage: The dataset is free to use, modify, and publish with attribution.
+
+This project uses open data made available under the Open Government License – Canada.
